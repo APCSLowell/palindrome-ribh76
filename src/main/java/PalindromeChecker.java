@@ -37,7 +37,7 @@ public void tester()
 public boolean palindrome(String word)
 {
   //your code here
-  word = word.toLowerCase();
+  word = word.replace(" ", "").toLowerCase();
   return word.equals(reverse(word));
   //return false;
 }
